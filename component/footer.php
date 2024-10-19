@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="footer mt-5 p-4 bg-dark text-white text-center">
+    <div class="footer mt-5 p-4 text-white text-center">
         <p>Copyright &copy; 2022 Widi Ardhiansyah</p>
     </div>
 </body>
