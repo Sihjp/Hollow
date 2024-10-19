@@ -10,20 +10,29 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include 'component/nav.php'; ?>
-    <!-- Main Section -->
+    <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col p-5">
-            <h1>Halo</h1>
-            <p>Nama Saya Widi Ardhiansyah</p>
-            </div>
-            <div class="col p-5">
-            <img class="img rounded mx-auto d-block" src="images/okarun.jpg" alt="Adalah saya">
-            </div>
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
         </div>
     </div>
-
-    <?php include 'component/footer.php'; ?>
+    </nav>
 </body>
 </html>

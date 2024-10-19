@@ -10,20 +10,8 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include 'component/nav.php'; ?>
-    <!-- Main Section -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col p-5">
-            <h1>Halo</h1>
-            <p>Nama Saya Widi Ardhiansyah</p>
-            </div>
-            <div class="col p-5">
-            <img class="img rounded mx-auto d-block" src="images/okarun.jpg" alt="Adalah saya">
-            </div>
-        </div>
+    <div class="footer mt-5 p-4 bg-dark text-white text-center">
+        <p>Copyright &copy; 2022 Widi Ardhiansyah</p>
     </div>
-
-    <?php include 'component/footer.php'; ?>
 </body>
 </html>
