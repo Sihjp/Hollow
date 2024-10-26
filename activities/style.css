@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* untuk apply font plus jakarta sans memakai
+font-family: 'Plus Jakarta Sans', sans-serif; */
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white;
+    position: relative;
+    background-image: url("../images/road sunset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    /* posisi container relatif terhadap body */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    /* Atur posisi navbar relatif terhadap container */
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+.navbar ul{
+  margin: 8px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li{
+  float: right;
+  list-style: none;
+}
+.navbar li a{
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.navbar li a:hover{
+  background-color: #fffdfd79;
+}
+
+.row {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+
+}
+
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }

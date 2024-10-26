@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* untuk apply font plus jakarta sans memakai
+font-family: 'Plus Jakarta Sans', sans-serif; */
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white;
+    position: relative;
+    background-image: url("../images/road sunset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    /* posisi container relatif terhadap body */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    /* Atur posisi navbar relatif terhadap container */
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+.navbar ul{
+  margin: 8px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li{
+  float: right;
+  list-style: none;
+}
+.navbar li a{
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.navbar li a:hover{
+  background-color: #fffdfd79;
+}
+
+.row {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+
+}
+
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 30%;
+    
+  }
+  
+  .column.side img {
+    display: block;
+    width: 305px; /* ubah ukuran lebar gambar menjadi 200 piksel */
+    height: auto; /* biarkan ketinggian gambar mengikuti aspek rasio aslinya */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Middle column */
+  .column.middle {
+    float: left;
+    width: 50%;
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+  }

@@ -11,15 +11,35 @@
     <link rel="stylesheet" href="page2style.css">
     <title>About</title>
 </head>
+
+<?php
+include '../koneksi.php'; // Hubungkan ke database
+
+// Query untuk mengambil data dari tabel 'isi'
+$sql = "SELECT header, body FROM isi WHERE id = 2"; // Sesuaikan id atau kondisi lain jika perlu
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Menampilkan data dari baris pertama
+    $row = $result->fetch_assoc();
+    $header = $row['header'];
+    $body = $row['body'];
+} else {
+    $header = "Data tidak ditemukan";
+    $body = "";
+}
+?>
+
 <body>
     <div class="container">
-        <nav class="navbar">
+    <nav class="navbar">
             <ul>
-                <li><a href="/index.html#projects">projects</a></li>
-                <li><a href="/index.html">back</a></li>
-                <li><a href="/index.html#profile">profile</a></li>
+                <li><a href="../activities/act.php">activities</a></li>
+                <li><a href="../index.html">back</a></li>
+                <li><a href="../profile/profile.php">profile</a></li>
+                <li><a href="../hobbies/hobi.php">hobbies</a></li>
                 <li><a href="../index.php">home</a></li>
-                <li style="float:left"><a href="#">WIDI ARDHIANSYAH</a></li>
+                <li style="float:left"><a href="#contact">WIDI ARDHIANSYAH</a></li>
             </ul>
         </nav>
 
@@ -36,12 +56,9 @@
                 </div>
                 
                 <div class="column middle">
-                    <h2>Hello</h2>
-                    <p>I have experience in IT infrastructure management and I also have knowledge in network administration and network security. <br>
-                        I believe that my experience in several aspects of it enables me to provide clients with effective and innovative solutions. <br><br>
-                        Besides my interest in computer science, i am also interested in 3d design.
-                        my goal going forward is to continue to develop my skills in software development, 3d modeling designer and become a recognized expert in the IT industry. <br><br>
-                        I want to contribute to creating innovative technology solutions that can have a positive impact and can solve problems in people's lives.
+                    <h2><?php echo $header; ?></h2>
+                    <p>
+                        <?php echo $body; ?>
                     </p>
                     <div class="icons">
                         <a href="#">
